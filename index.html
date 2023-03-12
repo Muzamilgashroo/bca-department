@@ -134,6 +134,28 @@ h5{
 	border: 2px solid #918fed;
 	cursor: pointer;
 }
+/* new  */
+.digital-watch-12 {
+  display: inline-block;
+  background-color: #222;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 20px;
+}
+
+.time {
+  display: inline-block;
+}
+
+.meridiem {
+  display: inline-block;
+  margin-left: 5px;
+}
+
+
+/* end  */
 
    </style>
          
@@ -143,8 +165,19 @@ h5{
         <h1>BCA Department</h1>
     </header>
     <nav>
-        
-	    <a href="http://admissions.baramullacollege.net/login.php" target="_blank">LOG IN</a>
+
+        <!-- watch -->
+
+        <a>
+            <div class="digital-watch-12">
+            <div class="time"></div>
+            <div class="meridiem"></div>
+           </div>
+
+        </a>
+
+        <!-- end  -->
+
     </nav>
     <main>
         <h2>Timetable for Second Semester</h2>
@@ -239,7 +272,8 @@ h5{
     </main>
 
          <nav>
-		 <a href="http://www.baramullacollege.net/" target="_blank"> COLLAGE </a>
+            <a href="http://admissions.baramullacollege.net/login.php" target="_blank">LOG IN</a>
+            <a href="http://www.baramullacollege.net/" target="_blank"> COLLAGE</a>
              <a> SYLLABUS </a>
          </nav>
          
@@ -330,16 +364,30 @@ h5{
 </div>
      
 <nav>
-    <a href="https://foemusaib.github.io/personal_website/" target="_blank" >Created By Muzamil Gashru.   </a>
+    
+    <a href="https://www.linkedin.com/in/muzamil-bashir-8268b4228/" target="_blank" >Created By Muzamil Gashru.   </a>
 </nav>                   
+ <!-- javascript -->
+
+ <script>
+    function updateTime() {
+  const now = new Date();
+  let hours = now.getHours();
+  const meridiem = hours >= 12 ? 'PM' : 'AM';
+  hours = hours % 12 || 12; // Convert to 12-hour format
+  const minutes = now.getMinutes().toString().padStart(2, '0');
+  const seconds = now.getSeconds().toString().padStart(2, '0');
+  const timeString = `${hours}:${minutes}:${seconds}`;
+  const timeElement = document.querySelector('.time');
+  const meridiemElement = document.querySelector('.meridiem');
+  timeElement.textContent = timeString;
+  meridiemElement.textContent = meridiem;
+}
+
+setInterval(updateTime, 1000);
+
+ </script>
+<!-- end---- -->
 
 </body>
 </html>
-
-
-
-
-
-
-                            
-                             
