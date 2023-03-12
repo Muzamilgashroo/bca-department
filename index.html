@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Dashboard</title>
+    <style>
+        *{
+	        padding: 0;
+	        margin: 0;
+	        font-family: 'Josefin Sans', sans-serif;
+	        box-sizing: border-box;
+        }
+        body{
+            
+            background-color: #d6d6d6;
+        }
+        /* Header styles */
+        header {
+           background-color: #a9a397;
+           color: #ffffff;
+           padding: 20px;
+           text-align: center;
+       }
+       
+       h1 {
+           margin: 0;
+           color: #2b2610;
+       }
+       
+       /* Navigation styles */
+       nav {
+    
+           background-color: #807676;
+           color: #fff;
+           overflow: hidden;
+       }
+       
+       nav a {
+           float: left;
+           display: block;
+           color: #fff;
+           text-align: center;
+           padding: 14px 16px;
+           text-decoration: none;
+       }
+       
+       nav a:hover {
+           background-color: #ddd;
+           color: #333;
+       }
+       
+       /* Timetable styles */
+       table {
+           border-collapse: inherit;
+           width: 100%;
+       }
+       
+       th, td {
+           text-align: center;
+           padding: 8px;
+       }
+       
+       th {
+           background-color: #9b9a8b;
+           color: #fff;
+       }
+       
+       tr:nth-child(even) {
+           background-color: #f2f2f2;
+       }
+       
+       /* Main content styles */
+       main {
+           padding: 20px;
+       }
+                                 /* ADD ON  */
+.title h2{
+	color: white;
+	font-size: 75px;
+	width: 1130px;
+	margin: 30px auto;
+	text-align: center;
+}
+.box{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 250px;
+}
+.card{
+	height: 137px;
+	width: 404px;
+	padding: 6px 14px;
+	background: #2b2610;
+	border-radius: 21px;
+	margin: 11px;
+	position: relative;
+	overflow: hidden;
+	text-align: center;
+}
+.card i{
+	font-size: 50px;
+	display: block;
+	text-align: center;
+	margin: 25px 0px;
+	color: #9b9c88;
+
+}
+h5{
+	color: white;
+	font-size: 23px;
+	margin-bottom: 15px;
+}
+.pra p{
+	color:#918fed;
+	font-size: 16px;
+	line-height: 27px;
+	margin-bottom: 25px;
+}
+.card .button{
+	background-color:#cfccbd;
+	color: white;
+	text-decoration: none;
+	border: 2px solid transparent;
+	font-weight: bold;
+	padding: 5px 10px;
+	border-radius: 10px;
+	transition: .4s; 
+}
+.card .button:hover{
+	background-color: transparent;
+	border: 2px solid #918fed;
+	cursor: pointer;
+}
+
+   </style>
+         
+</head>
+<body>
+    <header>
+        <h1>BCA Department</h1>
+    </header>
+    <nav>
+        <a href="http://www.baramullacollege.net/" target="_blank"> SECOND SEMESTER</a>
+    </nav>
+    <main>
+        <h2>Timetable</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Time/Day</th>
+                    <th>Monday</th>
+                    <!-- <th>Tuesday</th> -->
+                    <th>Wednesday</th>
+                    <th>Thursday</th>
+                    <!-- <th>Friday</th> -->
+                    <th>Saturday</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>10:00 - 10:40</td>
+                    <td>C Programming</td>
+                    <!-- <td>C Programming</td> -->
+                    <td>C Programming</td>
+                    <td>C Programming</td>
+                    <!-- <td>C Programming</td> -->
+                    <td>C Programming</td>
+                </tr>
+                <tr>
+                    <td>10:40 - 11:20</td>
+                    <td>Urdu</td>
+                    <!-- <td>Urdu</td> -->
+                    <td>Urdu</td>
+                    <td>EVS</td>
+                    <!-- <td>EVS</td> -->
+                    <td>EVS</td>
+                </tr>
+                <tr>
+                    <td>01:20 - 02:00</td>
+                    <td>JS-CSS</td>
+                    <!-- <td>JS-CSS</td> -->
+                    <td>JS-CSS</td>
+                    <td>MATH</td>
+                    <!-- <td>MATH</td> -->
+                    <td>MATH</td>
+                </tr>
+                <tr>
+                    <td>02:00 - 02:40</td>
+                    <td>Web-Design</td>
+                    <!-- <td>Web-Design</td> -->
+                    <td>Web-Design</td>
+                    <td>Web-Design</td>
+                    <!-- <td>Web-Design</td> -->
+                    <td>Web-Design</td>
+                </tr>
+
+            </tbody>
+        </table>    
+                <!-- NEW -->
+                <table>
+                    <thead>
+                      <tr>
+                        <th>C language</th>
+                        <th>Urdu</th>
+                        <th>EVS</th>
+                        <th>JS-CSS</th>
+                        <th>MATH</th>
+                        <th>WEB DESIGN</th>
+                        
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>by</td>
+                        <td>by</td>
+                        <td>by</td>
+                        <td>by</td>
+                        <td>by</td>
+                        <td>by</td>
+                      </tr>
+                      <tr>
+                        <td>Tanveer Sir</td>
+                        <td>Shah Sir</td>
+                        <td>Basharat Sir </td>
+                        <td>Shakeel Sir </td>
+                        <td>Mushtaq Sir </td>
+                        <td>Shakeel Sir </td>
+                      </tr>
+                      
+                    </tbody>
+                </table>
+    </main>
+
+         <nav>
+             <a> SYLLABUS </a>
+         </nav>
+         
+         <!-- NEW LINE START SYLLABUS -->
+     
+         <div class="title">
+		</div>
+
+		<div class="box">
+			<div class="card">
+				<i class="fas fa-bars"></i>
+				<h5>Major</h5>
+				<div class="pra">
+					<!-- <p>-</p> -->
+					<p style="text-align: center;">
+						<a class="button" target="_blank" href="https://publuu.com/flip-book/97298/266778/page/1">Tap</a>
+					</p>
+				</div>
+			</div>
+
+			<div class="card">
+				<i class="far fa-user"></i>
+				<h5>WEB</h5>
+				<div class="pra">
+
+				<!-- <p>-</p> -->
+
+					<p style="text-align: center;">
+						<a class="button" target="_blank" href="https://publuu.com/flip-book/97297/266775/page/1">Tap</a>
+					</p>
+				</div>
+			</div>
+
+			<div class="card">
+				<i class="far fa-bell"></i>
+				<h5>MATH</h5>
+				<div class="pra">
+					<!-- <p>-</p> -->
+					<p style="text-align: center;">
+						<a class="button" target="_blank" href="https://publuu.com/flip-book/97298/266778/page/1">Tap</a>
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+    <!-- NEW TABS -->
+
+    <div class="title">
+    </div>
+
+    <div class="box">
+        <div class="card">
+            <i class="fas fa-bars"></i>
+            <h5>URDU</h5>
+            <div class="pra">
+                <!-- <p>-</p> -->
+                <p style="text-align: center;">
+                    <a class="button" target="_blank" href=" - -- -- - ">Tap</a>
+                </p>
+            </div>
+        </div>
+
+        <div class="card">
+            <i class="far fa-user"></i>
+            <h5>EVS</h5>
+            <div class="pra">
+
+            <!-- <p>-</p> -->
+
+                <p style="text-align: center;">
+                    <a class="button" target="_blank" href="https://publuu.com/flip-book/97298/266800">Tap</a>
+                </p>
+            </div>
+        </div>
+
+        <div class="card">
+            <i class="far fa-bell"></i>
+            <h5>JS-CSS</h5>
+            <div class="pra">
+                <!-- <p>-</p> -->
+                <p style="text-align: center;">
+                    <a class="button" target="_blank" href="https://publuu.com/flip-book/97298/266796">Tap</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+     
+<nav>
+    <a href="https://www.linkedin.com/in/muzamil-bashir-8268b4228/" target="_blank" >Created By Muzamil Gashru.   </a>
+</nav>                   
+
+</body>
+</html>
+
+
+
+
+
+
+                            
+                             
